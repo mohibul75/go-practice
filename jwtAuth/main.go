@@ -8,7 +8,7 @@ import (
 func main(){
 
 	http.HandleFunc("/login", logIn())
-	http.HandleFunc("/signup", singUp())
+	http.HandleFunc("/signup", refresh())
 	http.HandleFunc("/home",home())
 
 	if err := http.ListenAndServe(":8000", nil); err != nil {
